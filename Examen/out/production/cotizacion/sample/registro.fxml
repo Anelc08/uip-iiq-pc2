@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.151" fx:controller="sample.Registro">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="323.0" prefWidth="354.0">
+         <children>
+            <TextField fx:id="txt_nombre" layoutX="84.0" layoutY="79.0" onAction="#nombre" promptText="nombre" />
+            <TextField fx:id="txt_ape" layoutX="84.0" layoutY="115.0" onAction="#ape" promptText="apellido" />
+            <TextField fx:id="txt_cedu" layoutX="84.0" layoutY="149.0" onAction="#cedu" promptText="cedula" />
+            <TextField fx:id="txt_tele" layoutX="84.0" layoutY="187.0" onAction="#tele" promptText="telefono" />
+            <TextField fx:id="txt_coclu" layoutX="84.0" layoutY="225.0" onAction="#conclu" promptText="cotizacion" />
+            <Label layoutX="83.0" layoutY="14.0" prefHeight="40.0" prefWidth="188.0" text="REGISTRO">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_enviar" layoutX="129.0" layoutY="250.0" mnemonicParsing="false" onAction="#enviar" text="enviar" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
